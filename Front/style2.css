@@ -1,0 +1,94 @@
+form 
+{
+    /* outline: 1px solid black; */
+    /* height: 250px; */
+    margin-top: 10px;
+    /* margin-bottom: 15px; */
+}
+
+fieldset
+{
+    border: none;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+form *
+{
+    display: block;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+form label
+{
+    /* outline: 1px solid red; */
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+form .line
+{
+    margin-bottom: 30px;
+    /* outline: 1px solid black; */
+    width: 100px;
+    transition: linear 0.6s;
+}
+
+form input
+{
+    margin-bottom: 0px;
+    font-size: 18px;
+    border: 0;
+    background-color: rgba(255, 0, 0, 0);
+    transition: linear 0.6s;
+    width: fit-content;
+}
+
+
+form input:focus
+{
+    outline: none;
+    border: 0;
+    /* outline: 1px solid red; */
+}
+
+input:focus + .line 
+{
+
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+}
+
+table *
+{
+    /* outline: 1px solid rebeccapurple; */
+    display: flex;
+}
+
+th
+{
+    width: 50%;
+}
+
+form
+{
+    position: relative;
+}
+
+input[type="submit"]
+{
+    position: absolute;
+    right: 0;
+    border: 2px outset black;
+    border-radius: 30px;
+    /* font-size: 20px;    */
+}
+
+input[type="submit"]:active
+{
+    border: 1px inset black;
+    
+}
+

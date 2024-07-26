@@ -1,0 +1,318 @@
+*
+{
+    /* outline: 1px solid rebeccapurple; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4a00e0;
+    /* background-color: #d0b9ff; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    color: #000;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.container .top
+{
+    height: 30px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .top p
+{
+    height: 23px;
+    /* outline: 1px solid black; */
+    border-radius: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 7px;
+    background-color: rgb(94,53,233);
+
+}
+
+.container .top .name
+{
+    padding: 0;
+    right: 0;
+    /* outline: 1px solid black; */
+    width: 30px;
+    height: 30px;
+}
+
+.container .top .notifications
+{
+    padding: 0;
+    left: 0;
+    background-image: url("https://www.flaticon.com/fr/icones-gratuites/cloche-de-notification");
+    /* outline: 1px solid black; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* outline: 1px solid black; */
+    
+    width: 30px;
+    height: 30px;
+}
+
+.container .amount
+{
+    position: relative;
+    border-radius: 100%;
+    width: 220px;
+    height: 220px;
+    margin: 40px;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(94,53,233);
+    color: white;
+}
+
+.container .amount span
+{
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    top: 20%;
+    font-size: 25px;
+    color: rgb(212, 212, 212);
+    /* outline: 1px solid rebeccapurple; */
+    position: absolute;
+}
+
+.container .amount p
+{
+    position: relative;
+    /* background-color: red; */
+    top: 90px;
+}
+
+.container .elts
+{
+    /* outline: 1px solid red; */
+    padding: 10px;
+}
+
+.container .elts .line
+{
+    height: 40px;
+    /* outline: 1px solid black; */
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+    border-bottom: 2px solid rgba(102, 51, 153, 0.418);
+}
+
+.container .elts .line .color
+{
+    width: 5px;
+    /* background-color: aqua; */
+    margin-right: 15px;
+}
+
+.container .bottom
+{
+    position: absolute;
+    bottom: 0;
+    /* outline: 1px solid black; */
+    left: 0;
+    margin: 30px;
+    width: calc(100% - 60px);
+    height: 35px;
+}
+
+.container .elts .line .name
+{
+    font-family: cursive;
+    font-size: 20px;
+    width: 150px;
+    padding-top: 6px;
+    /* outline: 1px solid red; */
+}
+
+
+.container .elts .line .price
+{
+    position: relative;
+    width: 100px;
+    right: 0;
+    position: absolute;
+    right: 0;
+    /* outline: 1px solid blue; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .whitepage
+{
+    z-index: -2;
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    left: 0;
+    top: 200px;
+    height: 100%;
+    background-color: rgba(180, 224, 255, 0.911);
+
+}
+
+.container .elts .line .price *
+{
+    min-width: calc(100% - 10px);
+    padding-right: 10px;
+    width: calc(auto + 100px);
+    line-height: 100%;
+}
+
+.container .elts .line .price .montant
+{
+    right: 0;
+    height: 60%;
+    font-family: cursive;
+    text-align: right;
+    font-weight: bolder;
+    overflow-y: visible;
+    
+}
+
+.container .elts .line .price .spend
+{
+    position: relative;
+    height: 40%;
+    font-family: cursive;
+    font-size: 13px;
+    color: grey;
+    text-align: right;
+    font-weight: bolder;
+    overflow-y: visible;
+    top: -5px;
+}
+
+::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.bottom
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .bottom p a
+{
+    color: rgba(255, 0, 0, 0.014);
+}
+
+.container .bottom p
+{
+    height: 23px;
+    /* outline: 1px solid black; */
+    border-radius: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 7px;
+    background-color: rgb(94,53,233);
+
+}
+
+
+.container .bottom * 
+{
+    padding: 0;
+    right: 0;
+    /* outline: 1px solid black; */
+    width: 30px;
+    height: 30px;
+}
+
+.bottom *
+{
+    width: 30px;
+}
+
+@media only screen and (max-width: 500px)
+{
+    body
+    {
+        background-color: #d0b9ff;
+    }
+
+    .container .amount
+    {
+        margin-left: calc(50% - 110px);
+    }
+
+    .container 
+    {
+        background-color: none;
+        width: 100%;
+        height: 95vh;
+    }
+
+    .container .top
+    {
+        display: none;
+    }
+
+    .container .bottom
+    {
+        position: absolute;
+        top: 10px;
+        bottom: none;
+    }
+}
+
+
+.bottom .history p
+{
+    background-image: url("history.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+.bottom .add_money p
+{
+    background-image: url("transaction.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+.bottom .add p
+{
+    background-image: url("wallet.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
